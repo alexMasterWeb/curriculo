@@ -1,0 +1,327 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <title>EmailTemplate-Responsive</title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients -->
+    <!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
+
+    <!-- CSS Reset -->
+    <style type="text/css">
+/* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+html,  body {
+	margin: 0 !important;
+	padding: 0 !important;
+	height: 100% !important;
+	width: 100% !important;
+}
+/* What it does: Stops email clients resizing small text. */
+* {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+/* What it does: Forces Outlook.com to display emails full width. */
+.ExternalClass {
+	width: 100%;
+}
+/* What is does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+	margin: 0 !important;
+}
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,  td {
+	mso-table-lspace: 0pt !important;
+	mso-table-rspace: 0pt !important;
+}
+/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+	border-spacing: 0 !important;
+	border-collapse: collapse !important;
+	table-layout: fixed !important;
+	margin: 0 auto !important;
+}
+table table table {
+	table-layout: auto;
+}
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+	-ms-interpolation-mode: bicubic;
+}
+/* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+.yshortcuts a {
+	border-bottom: none !important;
+}
+/* What it does: Another work-around for iOS meddling in triggered links. */
+a[x-apple-data-detectors] {
+	color: inherit !important;
+}
+</style>
+
+    <!-- Progressive Enhancements -->
+    <style type="text/css">
+        
+        /* What it does: Hover styles for buttons */
+        .button-td,
+        .button-a {
+            transition: all 100ms ease-in;
+        }
+        .button-td:hover,
+        .button-a:hover {
+            background: #555555 !important;
+            border-color: #555555 !important;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 600px) {
+
+            .email-container {
+                width: 100% !important;
+            }
+
+            /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+            .fluid,
+            .fluid-centered {
+                max-width: 100% !important;
+                height: auto !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+            /* And center justify these ones. */
+            .fluid-centered {
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            /* What it does: Forces table cells into full-width rows. */
+            .stack-column,
+            .stack-column-center {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+            /* And center justify these ones. */
+            .stack-column-center {
+                text-align: center !important;
+            }
+        
+            /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+                
+        }
+
+    </style>
+    </head>
+    <body bgcolor="#e0e0e0" width="100%" style="margin: 0;" yahoo="yahoo">
+    <table bgcolor="#e0e0e0" cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" style="border-collapse:collapse;">
+      <tr>
+        <td><center style="width: 100%;">
+            
+            <!-- Visually Hidden Preheader Text : BEGIN -->
+            <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;"> (Optional) This text will appear in the inbox preview, but not the email body. </div>
+            <!-- Visually Hidden Preheader Text : END --> 
+            
+            <!-- Email Header : BEGIN -->
+            <table align="center" width="600" class="email-container">
+            <tr>
+                <td style="padding: 20px 0; text-align: center"><img src="images/Image_200x50.png" width="200" height="50" alt="alt_text" border="0"></td>
+              </tr>
+          </table>
+            <!-- Email Header : END --> 
+            
+            <!-- Email Body : BEGIN -->
+            <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+            
+            <!-- Hero Image, Flush : BEGIN -->
+            
+            <!-- Hero Image, Flush : END --> 
+            
+            <!-- 1 Column Text : BEGIN -->
+            <tr>
+                <td style="padding: 40px; text-align: center; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555;"> Profissional graduando em Análise e Desenvolvimento de Sistemas com pelo menos, 2 anos de experiência atuando com freelancer de aplicativos mobile, desktop e web, tendo o modelo SCRUM como ferramenta base para a gestão e o planejamento dos projetos. Sou auto didata e busco alto nível de adaptação, acompanhando as transformações do mercado, atualmente estou focado no aprendizado de machine learning, inteligencia artificial e Big Data.
+  			<br>
+                <br>
+                
+                <!-- Button : Begin -->
+                
+                <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto">
+                    <tr>
+                    <td style="border-radius: 3px; background: #222222; text-align: center;" class="button-td"><a href="https://github.com/alexMasterWeb" target="_blank" style="background: #222222; border: 15px solid #222222; padding: 0 10px;color: #ffffff; font-family: sans-serif; font-size: 13px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold;" class="button-a"> 
+                      <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->Repositório Git<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]--> 
+                      </a></td>
+                  </tr>
+                  </table>
+                
+                <!-- Button : END --></td>
+              </tr>
+            <!-- 1 Column Text : BEGIN --> 
+            
+            <!-- Background Image with Text : BEGIN -->
+            <tr>
+                <td background="images/Image_600x230.png" bgcolor="#222222" valign="middle" style="text-align: center; background-position: center center !important; background-size: cover !important;"><!--[if gte mso 9]>
+                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:175px; background-position: center center !important;">
+                    <v:fill type="tile" src="assets/Responsive/Image_600x230.png" color="#222222" />
+                    <v:textbox inset="0,0,0,0">
+                    <![endif]-->
+                
+                <div>
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td valign="middle" style="text-align: center; padding: 40px; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #ffffff;"> Busco a primeira experiência profissional na área de T.I., e pretendo assumir a vaga de Analista ou Desenvolvedor de Sistema. </td>
+                      </tr>
+                  </table>
+                  </div>
+                
+                <!--[if gte mso 9]>
+                    </v:textbox>
+                    </v:rect>
+                    <![endif]--></td>
+              </tr>
+            <!-- Background Image with Text : END --> 
+            
+            <!-- Two Even Columns : BEGIN -->
+            <tr>
+                <td align="center" valign="top" style="padding: 10px;"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                    <td class="stack-column-center"><table cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                        <td style="padding: 10px; text-align: center"><img src="images/Image_270x270.png" width="270" height="270" alt="alt_text" border="0" class="fluid"></td>
+                      </tr>
+                        <tr>
+                        <td style="font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">  Neste curso aprendi sobre os principais frameworks para criação de sites responsivos e usar API de forma eficiente com armazenameto em Cloud, certificado aqui <a href="https://www.udemy.com/certificate/UC-T48ZK9SQ/" target="_blank">aqui</a>  </td>
+                      </tr>
+                      </table></td>
+                    <td class="stack-column-center"><table cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                        <td style="padding: 10px; text-align: center"><img src="images/Image_270x270a.png" width="270" height="270" alt="alt_text" border="0" class="fluid"></td>
+                      </tr>
+                        <tr>
+                        <td style="font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;" class="center-on-narrow"> Neste curso android aprendi acriar 15 app em grande escala a trabalhar com Java e padrões MVC, e deixar um aplicativo pronto para uso no Google Play,certificado <a href="https://www.udemy.com/certificate/UC-RYKWNOKO/" target="_blank">aqui</a>  </td>
+                      </tr>
+                      </table></td>
+                  </tr>
+                  </table></td>
+              </tr>
+            <!-- Two Even Columns : END --> 
+            
+            <!-- Three Even Columns : BEGIN -->
+            <tr>
+                <td align="center" valign="top" style="padding: 10px;"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                    <td width="33.33%" class="stack-column-center"><table cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                        <td style="padding: 10px; text-align: center"><img src="images/do_zoro_a_nuvem.png" width="170" height="170" alt="alt_text" border="0" class="fluid"></td>
+                      </tr>
+                        <tr>
+                        <td style="font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;" class="center-on-narrow"> O maior aprendizado neste curso certamente foi sobre gerenciamento de processos com PM2, e ambiente de produção na nuvem(Digital Ocean), certificado <a href="https://www.udemy.com/certificate/UC-PQ836DNR/" target="_blank">aqui</a>  </td>
+                      </tr>
+                      </table></td>
+                    <td width="33.33%" class="stack-column-center"><table cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                        <td style="padding: 10px; text-align: center"><img src="images/debian2.png" width="170" height="170" alt="alt_text" border="0" class="fluid"></td>
+                      </tr>
+                        <tr>
+                        <td style="font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;" class="center-on-narrow"> Neste curso pela Aula EAD aprendi com eficácia o passo a passo na prática como instalar, configurar e administrar um Servidor Linux, certificado <a href="https://www.credential.net/11870120" target="_blank">aqui</a></td>
+                      </tr>
+                      </table></td>
+                    <td width="33.33%" class="stack-column-center"><table cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                        <td style="padding: 10px; text-align: center"><img src="images/mongo.png" width="170" height="170" alt="alt_text" border="0" class="fluid"></td>
+                      </tr>
+                        <tr>
+                        <td style="font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;" class="center-on-narrow"> Neste curso do MongoDB University aprendi como usar o pipeline do MongoDB, transformação de documentos e análise de dados preditivos, certificado <a href="https://university.mongodb.com/courses/M121/2018_July/completion" target="_blank">aqui</a>  </td>
+                      </tr>
+                      </table></td>
+                  </tr>
+                  </table></td>
+              </tr>
+            <!-- Three Even Columns : END --> 
+            
+            <!-- Thumbnail Left, Text Right : BEGIN -->
+            <tr>
+                <td dir="ltr" align="center" valign="top" width="100%" style="padding: 10px;"><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                    <td width="33.33%" class="stack-column-center"><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                        <td dir="ltr" valign="top" style="padding: 0 10px;"><img src="images/faculdade-martha-falcao-wyden.png"  width="170" alt="alt_text" border="0" class="center-on-narrow"></td>
+                      </tr>
+                      </table></td>
+                    <td width="66.66%" class="stack-column-center"><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                        <td dir="ltr" valign="top" style="font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px; text-align: left;" class="center-on-narrow"><strong style="color:#111111;">Graduação</strong> <br>
+                            <br>
+                            Graduado em agosto de 2018 no curso de Análise e Desenvolvimento de Sistemas pela instituição de Ensino Martha Falção - Wyden <br>
+                            <br>
+                            
+                            </td>
+                      </tr>
+                      </table></td>
+                  </tr>
+                  </table></td>
+              </tr>
+            <!-- Thumbnail Left, Text Right : END --> 
+            
+            <!-- Thumbnail Right, Text Left : BEGIN -->
+            <tr>
+                <td dir="rtl" align="center" valign="top" width="100%" style="padding: 10px;"><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                    <td width="33.33%" class="stack-column-center"><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                        <td dir="ltr" valign="top" style="padding: 0 10px;"><img src="images/puc.png" width="170" alt="alt_text" border="0" class="center-on-narrow"></td>
+                      </tr>
+                      </table></td>
+                    <td width="66.66%" class="stack-column-center"><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                        <td dir="ltr" valign="top" style="font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px; text-align: left;" class="center-on-narrow"><strong style="color:#111111;">Especialização</strong> <br>
+                            <br>
+                            Recém inscrito no curso à distancia de pós-graduação pela PUC de Minas, no curso de Ciência de Dados e Big Data. <br>
+                            <br>                            
+                            <!-- Button : Begin -->
+                            
+                           </td>
+                      </tr>
+                      </table></td>
+                  </tr>
+                  </table></td>
+              </tr>
+            <!-- Thumbnail Right, Text Left : END -->
+            
+          </table>
+            <!-- Email Body : END --> 
+            
+            <!-- Email Footer : BEGIN -->
+            <table align="center" width="600" class="email-container">
+            <tr>
+                <td style="padding: 40px 10px;width: 100%;font-size: 12px; font-family: sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #888888;"><webversion style="color:#cccccc; text-decoration:underline; font-weight: bold;">Curriculo Alex Neto</webversion>
+                <br>
+                <br><a href="http://www.skasab.store/" target="_blank">SKASAB</a>
+                 - 2018<br>
+                <span class="mobile-link--footer">alex_webdesigner@outlook.com</span> <br>
+					<span class="mobile-link--footer">92 98135-6782 / 3629-6179</span> <br><span class="mobile-link--footer">Manaus - Am</span> <br>
+                <br>
+                <unsubscribe style="color:#888888; text-decoration:underline;">unsubscribe</unsubscribe></td>
+              </tr>
+          </table>
+            <!-- Email Footer : END -->
+            
+          </center></td>
+      </tr>
+    </table>
+</body>
+</html>
